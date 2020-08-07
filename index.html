@@ -37,21 +37,21 @@
                               <div onclick="getNumber('numThree')" id="numThree" class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button"><</div>
+                                <div onclick="backSpace()" class="button"><</div>
                                 <div onclick="getNumber('numZero')" id="numZero" class="button">0</div>
-                                <div class="button">C</div>
+                                <div onclick="allClear()" class="button">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <button onclick="submitBtn()" type="submit" class="submit-btn">Submit</button>
+                                <p id="tryLeft" class="action-left">3 try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="notification" class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+        <div class="notify-section">
+            <p id="noMatch" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="match" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 
